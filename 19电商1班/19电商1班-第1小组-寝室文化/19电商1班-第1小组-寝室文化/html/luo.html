@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>骆平</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/layui.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <script src="../js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="top">
+        <div class="inner nav">
+            <ul class="fl">
+                <li><a href="#" class="logo">4541</a></li>
+                <li><a href="#" id="gsc"></a></li>
+                <!-- <li><a href="#">Redmi K30 Ultrol</a></li>
+                <li><a href="#">联系客服</a></li> -->
+            </ul>
+
+            <!-- <ul class="fr">
+                <li><a href="#">我的订单</a></li>
+                <li><a href="#">购物车</a></li>
+                <li><a href="#">登录</a></li>
+            </ul> -->
+            <div class="serch">
+                <input type="text" placeholder="吴优男神">
+                <input type="button" value="搜索" id="serchBtn">
+            </div>
+        </div>
+    </div>
+
+    <div class="main_description inner">
+        <div class="card">
+            <h3 class="title">骆平的个人简介<a href="../index.html" class="fr">返回主页</a></h3>
+            <p>我喜欢听歌，看综艺节目；喜欢参与一些娱乐中的活动。</p>
+        </div>
+        <div class="card">
+            <h3 class="title">骆平的大学生活</h3>
+            <p>暂无</p>
+        </div>
+    
+        <div class="card">
+            <h3 class="title">骆平的获奖情况</h3>
+            <p>暂无</p>
+        </div>
+        <div class="card">
+            <h3 class="title">骆平参与的活动</h3>
+            <p>暂无</p>
+        </div>
+        <div class="card">
+            <h3 class="title">骆平的生活照</h3>
+            <img src="../images/luo.jpg" style="width: 100%;" alt="">
+        </div>
+        <div class="card">
+            <h3 class="title">骆平的未来规划</h3>
+            <p>暂无</p>
+        </div>
+    </div>
+    
+
+    <div class="footer discrip_footer">
+        <div class="copy">
+            <p>成都艺术职业大学城市学院19电商1班网页设计期末作业</p>
+            <p>小组人员：吴优 刘天鋆 张小平 骆平 骆平</p>
+            <div class="blog">
+                <a href="http://wuyou.fun/" title="吴先森的博客~" target="_blank">myBlog</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- news -->
+    <div class="news">
+        <h3 class="title">简要新闻<a href="./news.html" class="fr" target="_blank" style="font-size:15px; font-weight: normal; margin-top: 2px; color: red;">新闻详细>>></a></h3>
+        <ul class="list">
+        </ul>
+    </div>
+
+    <script>
+        $(() => {
+            getGusici($("#gsc"));
+            $("#gsc").on("click", () => {
+                getGusici($("#gsc"));
+            })
+            $("#serchBtn").on("click",()=>{
+                alert("哇~男神好帅丫~")
+            })
+        })
+
+        getGusici=(ele)=>{
+            $.ajax({
+                    type: "get",
+                    url: "https://v1.jinrishici.com/all.txt",
+                    success: (result) => {
+                        // ele.text(ele.text(result));
+                        ele.text(result);
+                    },
+                    error: (err) => {
+                        ele.text("问君能有几多愁，恰似一江春水向东流。");
+                    }
+                })
+        }
+    </script>
+
+    <script src="../js/news.js"></script>
+    <script src="../js/layui.all.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,290 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	font-size: 100%;
+	font-family: \5FAE\8F6F\96C5\9ED1;
+	line-height: 160%;
+	color: #333333;
+	background-image: url(../images/earth.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.clear {
+	font-size: 0px;
+	clear: both;
+	line-height: 0px;
+	height: 1px;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix {
+	min-height: 1px;
+}
+img {
+	border: none;
+}
+a:link {
+	TEXT-DECORATION: none;
+	color: #000;
+}
+a:visited {
+	TEXT-DECORATION: none;
+	color: #000;
+}
+a:hover {
+	text-decoration: none;
+	color: #000;
+}
+a:active {
+	TEXT-DECORATION: none;
+}
+a {
+	/* position: static;
+	 border: 3px solid #73AD21; */
+	color: #000;
+}
+ul {
+	list-style: none;
+}
+input, textarea {
+	outline: medium;
+	border: none;
+}
+#head {
+}
+.head-box {
+	width: 1000px;
+	margin: 0 auto;
+	line-height: 60px;
+	padding: 20px 0;
+}
+.head-box .nav {
+	float: left;
+	padding-left: 30px;
+}
+.logo {
+	float: left;
+}
+.logo img {
+	float: left
+}
+.logo span {
+	float: left;
+	font-weight: bold;
+	font-size: 30px;
+	padding-left: 10px;
+	padding-top: 10px
+}
+.head-box .search {
+	float: right;
+}
+.head-box .search .i1 {
+	width: 200px;
+	height: 35px;
+	padding-left: 30px;
+	background: url(../images/search-bg.jpg) left no-repeat;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	color: #ccc;
+}
+.head-box .nav .menu li.li1 {
+	width: 85px;
+	float: left;
+	text-align: center;
+}
+.head-box .nav a {
+	color: #fff;
+	font-weight: bold;
+}
+.head-box .nav a:hover {
+	color: red;
+	font-weight: bold;
+}
+.head-box .login {
+	font-size: 12px;
+	float: right;
+}
+#banner {
+	width: 1000px;
+	margin: 0 auto;
+}
+#content {
+	width: 1000px;
+	margin: 0 auto;
+}
+h1 {
+	padding: 20px 0 20px;
+	text-align: center;
+	color: #fff;
+}
+.c-box {
+	padding-bottom: 30px;
+}
+.c-box li {
+	width: 32%;
+	float: left;
+	font-size: 12px;
+	text-align: center;
+	background: #f9f9f9;
+	border: 1px solid #ccc;
+	margin-right: 2%;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.c-box li:nth-child(3) {
+	margin-right: 0;
+}
+.c-box li span {
+	color: red;
+}
+.c-box li img {
+	transition: 1s;
+	-webkit-transition: 1s;
+}
+.c-box li img:hover {
+	transform: scale(1.5, 1.5);
+	-webkit-transform: scale(1.5, 1.5);
+}
+.c-box2 {
+	width: 800px;
+	margin: 0 auto
+}
+.c-box2 li {
+	width: 48%;
+	float: left;
+	margin-right: 1%;
+	margin-left: 1%;
+	overflow: hidden;
+}
+.content-box {
+	padding: 30px 0 30px 0;
+}
+.mobile td {
+	text-align: center;
+	background: #fff;
+	padding: 20px;
+}
+.mobile td span {
+	color: red;
+}
+.c-left {
+	width: 40%;
+	float: left;
+}
+.c-right {
+	width: 55%;
+	float: right;
+}
+.c-right .price {
+	background: #eee;
+	margin: 10px 0 10px 0;
+}
+.contact {
+	width: 1000px;
+	margin: 0 auto;
+	background: url(../images/banner02.jpg) no-repeat top center;
+	background-size: cover
+}
+.contact_box {
+	background: rgba(0,0,0,0.2);
+	padding: 20px 0;
+}
+.contact .right {
+	width: 600px;
+	float: right
+}
+.contact .left {
+	width: 380px;
+	float: left;
+	padding-left: 20px;
+	color: #fff;
+}
+.contact .left p {
+	margin-top: 10px;
+}
+.contact .left h2 {
+	color: #C93;
+}
+.contact span {
+	width: 200px;
+	color: #C93;
+	display: inline-block;
+	text-align: right;
+	padding-right: 10px
+}
+.contact .right div {
+	margin-top: 10px;
+}
+.contact .right .ipt {
+	width: 300px;
+	height: 30px;
+	line-height: 30px;
+}
+.watch li {
+	width: 32%;
+	float: left;
+	margin-right: 2%;
+	padding: 20px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.watch li.lb {
+	margin-bottom: 0;
+}
+.watch li span {
+	color: red;
+	margin-left: 20px;
+}
+.watch li:nth-child(3n) {
+	margin-right: 0;
+}
+input.btn {
+	width: 80px;
+	background: #ff9d9e;
+	height: 30px;
+	color: #fff;
+}
+input.ret {
+	width: 80px;
+	background: #74c7ff;
+	height: 30px;
+	color: #fff;
+	display: inline-block;
+	margin-left: 10px;
+}
+#foot {
+}
+.foot-box {
+	width: 1000px;
+	margin: 0 auto;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	font-size: 12px;
+	line-height: 80px;
+}
+.foot-box a {
+	color: #fff;
+}
+.center {
+	text-align: center;
+	width: 1000px;
+	margin: 0 auto;
+}
+.center table {
+	margin: 0 auto
+}
+.white{color:#fff}
+.white a{color:#fff}
+.about{color:#eee}

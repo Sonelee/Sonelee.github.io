@@ -1,0 +1,25 @@
+div #images
+           { width: 1200px;
+			margin: 20px auto;
+			padding-left: 10px;}
+div.img
+           {float: left; 
+		   text-align: center;
+		   width: 100px;}
+div.img a img
+		   {display: inline; 
+		   margin: 3px;
+			width: 200px; 
+			height: 200px; 
+			transition: transform 0.8s;}
+div.img a:hover img
+		   {transform: scale(1.05); }
+div.desc
+		   {text-align: center;
+			font: 12px 黑体; 
+			width: 90px; 
+			margin: 10px 5px 10px 5px;}
+#main
+           {height: 2000px;}
+#box4      
+           {color: indianred;}

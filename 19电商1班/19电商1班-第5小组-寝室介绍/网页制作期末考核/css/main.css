@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* public */
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    background-image: url(../images/bg.jpg);
+    background-repeat: cover;
+    /* background-color: #c9cfdc; */
+    background-attachment: fixed;
+
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 14px;
+
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.header {
+    background-color: #7d8bad;
+    box-shadow: 0px 3px 15px rgba(108, 150, 189, 0.6)
+}
+
+.nav {
+    height: 40px;
+    line-height: 40px;
+}
+
+.nav li {
+    float: left;
+    height: 40px;
+}
+
+.nav a {
+    padding: 0 10px;
+    float: left;
+    color: #ffffff;
+    height: 38px;
+    font-size: 18px;
+}
+.nav a:hover {
+    background-color: #e0e0e0;
+    border-bottom: 2px solid rgb(110, 198, 224);
+}
+/* 顶部广告 */
+.ad {
+    height: 100px;
+    background-color: #b4cee9;
+}
+.ad .ad-inner{
+    width: 1800px;
+    margin: 0 auto;
+}
+.ad img{
+    width: 100%;
+    height: 100px;
+}
+/* 正文 */
+.box {
+    background-color: #323d4f;
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+    border-radius: 40px;
+}
+.photo{
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -400px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.photo img{
+    width: 100%;
+    position: absolute;
+}
+/* 单独给人员添加图片缩放，利用定位解决 */
+.cai img{
+    top: -200px;
+}
+.luo img{
+    top: -30px;
+}
+.zhou img{
+    top: -260px;
+}
+.jia img{
+    top:-155px; 
+}
+.yang img{
+    top:-250px;
+}
+/* 页面内容 */
+.tx{
+    width: 1000px;
+    position: absolute;
+    top: 600px;
+    left: 100px;
+    text-align: center;
+}
+.tx p{
+    font-size: 28px;
+    line-height: 40px;
+    font-family: 楷体;
+    color: #ffffff;
+}
+/* 人员信息 */
+.people{
+    width: 1200px;
+    height: 480px;
+    margin-top: 1200px;
+    position: relative;
+}
+.people div{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+}
+.people div a{
+    display: block;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 310px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+.people .yang{
+    background:url(../images/yangli.jpg);
+    background-size: 100%;
+    background-position: 0px -50px;
+    top: 0px;
+    left: 30px;
+}
+.people .luo{
+    background:url(../images/luo.jpg);
+    background-size: 190%;
+    background-position: -70px -50px;
+    top: 200px;
+    left: 200px;
+}
+.people .cai{
+    background:url(../images/cai.jpg);
+    background-size: 190%;
+    background-position: -75px -100px;
+    top: 0px;
+    left: 400px;
+}
+.people .zhou{
+    background:url(../images/zhou.png);
+    background-size: 125%;
+    background-position: -30px 0px;
+    top: 200px;
+    left: 600px;
+}
+.people .jia{
+    background:url(../images/jia.jpg);
+    background-size: 125%;
+    background-position: -45px -50px;
+    top: 0px;
+    left: 800px;
+}
+.people .li{
+    background:url(../images/li.jpg);
+    background-size: 122%;
+    background-position: -22px -52px;
+    top: 200px;
+    right: 30px;   
+}
+/* music */
+.music{
+    position: fixed;
+    top: 700px;
+    right: 0;
+}
+/* 底部栏 */
+.footer{
+    background-color: #a6b4d0;
+    margin-top: 100px;
+}
+.footer .ft{
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(19, 9, 9);
+}
+/* 个人样式 */
+.myself img{
+    width: 396px;
+    height: 600px;
+}
+.myself{
+    border-radius: 0;
+    background-color:#c9cfdc;
+}
+.myself h1{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+/* 猪儿虫的个人样式 */
+.more a{
+    text-decoration: underline;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+}
+.more a:hover{
+    color: #85c2e4;
+}
+/* 三级页面样式 */
+.z_video{
+    width: 1080px;
+    height: 1920px;
+}
+.zhou_video{
+    width: 1080px;
+    height: 1080px;
+}
+.jia_video{
+    width: 720px;
+    height: 1280px;
+}
+h1,h2{
+    color: #ffffff;
+}

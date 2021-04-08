@@ -1,0 +1,23 @@
+body {text-align: center;
+			background-image:url(../js/ywj/bejing.jpg);}
+			.bread {
+				text-align: left;
+				border-bottom: 1px black dotted;
+				}
+			.nav {text-align: center;
+				background-image: url(../js/ywj/bejing2.jpg);
+				font-size:40px;
+				font-family: 楷体;
+				line-height: 2;
+			}
+			a {text-decoration: none;}
+			a:hover {color: crimson; text-decoration: underline;}
+			a:active {color: gray; text-decoration: none;}
+			.pics {width: 700px;
+			     height: 500px;
+				 margin: 10px;}
+				 p{
+					 font-family: 黑体;
+					 font-size: x-large;
+					 font-style: normal;
+				 }

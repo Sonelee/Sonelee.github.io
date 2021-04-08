@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寝室文化</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/layui.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <script src="../js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="top">
+        <div class="inner nav">
+            <ul class="fl">
+                <li><a href="#" class="logo">4541</a></li>
+                <li><a href="#" id="gsc"></a></li>
+                <!-- <li><a href="#">Redmi K30 Ultrol</a></li>
+                <li><a href="#">联系客服</a></li> -->
+            </ul>
+
+            <!-- <ul class="fr">
+                <li><a href="#">我的订单</a></li>
+                <li><a href="#">购物车</a></li>
+                <li><a href="#">登录</a></li>
+            </ul> -->
+            <div class="serch">
+                <input type="text" placeholder="吴优男神">
+                <input type="button" value="搜索" id="serchBtn">
+            </div>
+        </div>
+    </div>
+
+    <div class="main_description inner">
+        <div class="card">
+            <h3 class="title">寝室文化<a href="../index.html" class="fr">返回主页</a></h3>
+            <p>九州升腾气，囊括诸天地。小小宿舍，方圆不过三丈，却打破壁垒，缩地成寸，集五湖四海之学子汇聚一堂。
+                月亮之城西昌的彝族小伙阿牛子作，川东巨邑遂宁才华横溢的吴优，中国绸都南充的宅男刘天鋆，红军之乡巴中的小伙骆平，盐城自贡和甜城内江的道系青年张小平，六大地域，不同的乡音，汇聚于此，一方名为4541的天地。或动或静，或是于球场挥汗如雨，或是于图书馆奋笔疾书，或是于电子竞技熬夜奋战，志趣不同，却因同一寝室而走到了一起，从陌生到熟悉，有纷争也有磨合。山河故人千百里，远在他乡的我们汇聚在一起，组成了质朴而简单的小家庭。愿借此宝地，聚升腾之气，抟扶摇九万里，一展身手，踏破寒夜冰霜，开启征途，向着理想远航！</p>
+            <img src="../images/bg2.jpg" style="width: 100%;" alt="">
+        </div>
+    </div>
+
+
+
+    <div class="footer discrip_footer">
+        <div class="copy">
+            <p>成都艺术职业大学城市学院19电商1班网页设计期末作业</p>
+            <p>小组人员：吴优 刘天鋆 张小平 阿牛子作 骆平</p>
+            <div class="blog">
+                <a href="http://wuyou.fun/" title="吴先森的博客~" target="_blank">myBlog</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- news -->
+    <div class="news">
+        <h3 class="title">简要新闻<a href="./news.html" class="fr" target="_blank" style="font-size:15px; font-weight: normal; margin-top: 2px; color: red;">新闻详细>>></a></h3>
+        <ul class="list">
+        </ul>
+    </div>
+    
+    <script>
+        $(() => {
+            getGusici($("#gsc"));
+            $("#gsc").on("click", () => {
+                getGusici($("#gsc"));
+            })
+            $("#serchBtn").on("click", () => {
+                alert("哇~男神好帅丫~")
+            })
+        })
+
+        getGusici = (ele) => {
+            $.ajax({
+                type: "get",
+                url: "https://v1.jinrishici.com/all.txt",
+                success: (result) => {
+                    // ele.text(ele.text(result));
+                    ele.text(result);
+                },
+                error: (err) => {
+                    ele.text("问君能有几多愁，恰似一江春水向东流。");
+                }
+            })
+        }
+
+        
+    </script>
+
+    <script src="../js/news.js"></script>
+    <script src="../js/layui.all.js"></script>
+
+</body>
+
+</html>

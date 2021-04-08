@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/layui.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <script src="../js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="top">
+        <div class="inner nav">
+            <ul class="fl">
+                <li><a href="#" class="logo">4541</a></li>
+                <li><a href="#" id="gsc"></a></li>
+                <li><a href="../index.html">GO HOME</a></li>
+                <!-- <li><a href="#">Redmi K30 Ultrol</a></li> -->
+                <!-- <li><a href="#">联系客服</a></li> -->
+            </ul>
+
+            <!-- <ul class="fr"> -->
+                <!-- <li><a href="#">我的订单</a></li>
+                <li><a href="#">购物车</a></li>
+                <li><a href="#">登录</a></li> -->
+            <!-- </ul> -->
+            <div class="serch">
+                <input type="text" placeholder="吴优男神">
+                <input type="button" value="搜索" id="serchBtn">
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="main_description inner">
+        <div class="card">
+            <h3 class="title">不想开发了<a href="../index.html" class="fr">返回主页</a></h3>
+            <p>不想开发了</p>
+        </div>
+    </div> -->
+
+    <div class="news_box inner">
+        <!-- <div class="news_card">
+            <div class="news_title"><h3>你覅四大护sdfadhfadfh绿卡好的flak手动阀开发和</h3></div>
+            <a href="#"><img src="../images/3.png" alt=""></a>
+            <div class="news_conent">
+                热点新闻放大就爱上对方啊手动阿斯利康发哈可是对方哈萨克到了发哈开发阀就爱上对方has埃里克森就会发卡死的回复阿萨的开发哈伦裤是到付哈昆仑山地方哈萨克就阿斯顿
+            </div>
+        </div> -->
+    </div>
+
+    
+
+    <div class="footer discrip_footer news_footer">
+        <div class="copy">
+            <p>成都艺术职业大学城市学院19电商1班网页设计期末作业</p>
+            <p>小组人员：吴优 刘天鋆 张小平 阿牛子作 骆平</p>
+            <div class="blog">
+                <a href="http://wuyou.fun/" title="吴先森的博客~" target="_blank">myBlog</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(() => {
+            getGusici($("#gsc"));
+            $("#gsc").on("click", () => {
+                getGusici($("#gsc"));
+            })
+            $("#serchBtn").on("click",()=>{
+                alert("哇~男神好帅丫~")
+            })
+            setTimeout(function(){
+                alert("部分新闻没有跳转地址，是接口的问题，请忽略。")
+            },2000)
+        })
+
+        getGusici=(ele)=>{
+            $.ajax({
+                    type: "get",
+                    url: "https://v1.jinrishici.com/all.txt",
+                    success: (result) => {
+                        // ele.text(ele.text(result));
+                        ele.text(result);
+                    },
+                    error: (err) => {
+                        ele.text("问君能有几多愁，恰似一江春水向东流。");
+                    }
+                })
+        }
+    </script>
+
+
+    <script src="../js/news.js"></script>
+    <script src="../js/layui.all.js"></script>
+
+</body>
+
+</html>

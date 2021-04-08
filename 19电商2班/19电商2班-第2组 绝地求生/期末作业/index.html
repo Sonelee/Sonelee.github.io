@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>首页</title>
+		<style type="text/css">
+			#fixedbar{
+				width: 100%;
+				height: 120px;
+				background: rgba(0,0,0,0.3);
+				color: white;
+				z-index: 1000;
+				position: fixed;
+				top: 7px;
+				left: 8px;
+				font-size: 30px;
+				font-family:  微软黑体;
+				text-align:center;
+			}
+			#fixedbar ul li a:hover{
+				background-color: coral;
+			}
+			audio{
+				display: none;
+			}
+			#six{
+				width: 500px;
+				height: 400px;
+				background: rgba(0,0,0,0.7);
+				margin: auto;
+				top: 310px;
+				text-align: center;
+				position: fixed;
+				font-family:  宋体
+			}
+			li{
+				list-style: none;
+				width: 400px;
+				left: 0px;
+				float: left;
+				font-size: 22px; 
+				font-family: 宋体; 
+				position: relative;
+				color: ghostwhite;
+			}
+			.ttlink{
+				text-decoration: none;
+			}
+			#newbox{
+				width: 600px;
+				height: 290;
+				background: rgba(0,0,0,0.7);
+				margin-left: 1300px;
+				top: 130px;
+				text-align: center;
+				position: fixed;
+				font-family:  宋体
+				font-size: 22px;
+			}
+			#newboxtow{
+				width: 600px;
+				height: 290;
+				background: rgba(0,0,0,0.7);
+				margin-left: 1300px;
+				top: 460px;
+				text-align: center;
+				position: fixed;
+				font-family:  宋体
+				font-size: 22px;
+				
+			}
+			footer{
+				width: 100%;
+				height: 100px;
+				line-height: 100px;
+				text-align: center;
+				background: rgba(0,0,0,0.7)
+			}
+		</style>
+	</head>
+	<body>
+			<video autoplay loop muted>
+					<source src="move/imove2.mp4" type=" video/mp4"  />
+			</video>
+			<audio autoplay="autoplay" controls="controls" loop="loop" preload="auto" src="music/music.mp3"></audio>
+			<div id="fixedbar">绝 地 求 生 <img src="img/pubg2.png" width="2%">
+				<ul>
+					<li><a href="youw.html" class="ttlink" title="游戏介绍" onclick="Pttsendclik('link','游戏介绍')"><font color="white">游戏介绍</font></a></li>
+					<li><a href="cols.html" class="ttlink" title="游戏指南" onclick="Pttsendclik('link','游戏指南')"><font color="white">游戏指南</a></font></li>
+					<li><a href="Wods.html" class="ttlink" title="武器介绍" onclick="Pttsendclik('link','武器介绍')"><font color="white">武器介绍</a></font></li>
+					<li><a href="sixwer.html" class="ttlink" title="游戏反馈" onclick="Pttsendclik('link','游戏反馈')"><font color="white">游戏反馈</a></font></li>
+				</ul>
+			</div>
+			<div id="six">
+				<p><a href="erji.html" class="ttlink"><font color="white">游戏内容更新</font></a></p>
+				<p><a href="erji2.html" class="ttlink"><font color="white">绝地求生攀爬系统操作技巧攻略分享</font></a></p>
+				<p><a href="erji3.html" class="ttlink"><font color="white">绝地求生手游官网</font></a></p>
+				<p><a href="erji4.html" class="ttlink"><font color="white">绝地求生PC所需最低配置</font></a></p>
+				<hr>
+				<p><a href="erji5.html" class="ttlink"><font color="white">PUBG优化</font></a></p>
+				<p><a href="erji6.html" class="ttlink"><font color="white">PUBG在线玩家数据</font></a></p>
+				<p><a href="erji7.html" class="ttlink"><font color="white">绝地求生地图总预览图</font></a></p>
+				<p><a href="erji8.html" class="ttlink"><font color="white">绝地求生3周年纪念皮肤活动</font></a></p>
+				</hr>
+			</div>
+			<div id="newbox">
+				<p><font color="white">卡拉金地图介绍</p>
+				<p><font color="white">点击图片查看详情</p>
+				<a href="kalajin.html"><img src="img/kalajin.jpg" /> </a>
+			</div>
+			<div id="newboxtow">
+				<p><font color="white">艾伦格地图介绍</p>
+				<p><font color="white">点击图片查看详情</p>
+				<a href="ailunge.html"><img src="img/ailunge.jpg"></a>
+			</div>
+			<footer>
+				<hr>首页制作：邱安林； 小组成员：邱安林 向强 郎波 王昭<hr>
+			</footer>
+		</body>
+</html>

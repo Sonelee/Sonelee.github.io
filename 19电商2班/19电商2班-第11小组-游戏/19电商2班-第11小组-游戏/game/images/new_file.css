@@ -1,0 +1,48 @@
+/*通用样式*/
+.{
+	margin:0;
+	padding:0;
+	list-style；none；
+}
+h1,h2,h3,h4,h5,h6,b,i,{
+	font-weight；100；
+	color；#333；
+}
+a{
+	tex-dercoration；none;
+	color:#333;
+}
+
+
+
+/*头部导航*/
+.top_nav_bg{
+	width:100%;
+	height:78px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 1px solid#333;
+}
+.top_nav_bg.top_nav{
+	width:1358px;
+	height:78px;
+	border: 1px solid#333; 
+	margin:0 auto;/*设置元素水平居中*/
+}
+.top_nav_bg.top_nav.logo{
+	float: left;
+	width:377;
+	height:193px;
+	margin-top:10px;
+	background:url(../images/logo-120.jpg);
+	}
+	.top_nav_bg.top_nav.logo a{
+		font-size: 0;
+	}
+	.top_nav_bg.top_nav.nav_list li{
+		float: left;
+		width:150px;
+		height:78px ;
+	}
+	
